@@ -3,13 +3,13 @@ import { initializeApp, getApps, getApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCKkCRegazXJNCbwT0lpRKNuShl_542FUs",
-  authDomain: "fir-login-project-63941.firebaseapp.com",
-  projectId: "fir-login-project-63941",
-  storageBucket: "fir-login-project-63941.firebasestorage.app",
-  messagingSenderId: "300654767639",
-  appId: "1:300654767639:web:af6f3f7e19690f66d3b652",
-  measurementId: "G-2VP80LZQKN"
+ apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
+  authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID,
+  measurementId: process.env.NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID,
 };
 
 
